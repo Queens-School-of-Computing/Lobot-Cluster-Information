@@ -41,6 +41,9 @@ This is a tutorial for using the Queen's School of Computing  GPU computing clus
 - [Conda Environments](#conda-environments)
 
 # Initialization
+Access to Lobot is gained through github credentials and being a member of the Queen's School of Computing Github Organization. After you accept the organization invite, you can access the cluster by logging in at
+[Source](https://lobot.caslab.queensu.ca/)
+
 Once you have connected your GitHub to the server you will now see the Hub Control Panel. The Hub Control Panel is where you can initialize or terminate your session. 
 
 ### Allocating Server Resources
@@ -55,7 +58,7 @@ On your first startup of the server you will be allocated 10G of storage. These 
 
 **\*IMPORTANT!\*** Closing your JupyterLab tab will not  end your session and free up resources.  You must go to File -> Hub Control Panel, then in the new tab click the "Stop My Server" button.  All your files on the server will be automatically saved upon ending a session.
 ### Server Life cycle
-After 12 hours of inactivity your session will be terminated.  All your files will be automatically saved to your allocated storage.
+After 24 hours of inactivity your session will be terminated.  All your files will be automatically saved to your allocated storage.
 
 
 # JupyterLab
