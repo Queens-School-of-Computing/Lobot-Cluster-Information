@@ -10,7 +10,7 @@
   <a href="#"><img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg?style=flat-square&color=brightgreen" alt="" /></a>
 </p>
 <p align="center">
-  <span>Contributors: Chris Molloy and Michael Wrana</span>
+  <span>Contributors: Aaron Visser</span>
 </p>
 
 
