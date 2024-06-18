@@ -16,10 +16,10 @@
 
 
 # Introduction
-This is a tutorial for using the L1nna laboratory's GPU computing cluster.  It contains 8 Nvidia [RTX6000s](https://www.nvidia.com/en-us/design-visualization/quadro/rtx-6000/), each with 24GB of GDDR6 memory.  The server is ideal for performing GPU-intensive computing tasks that wouldn't be possible on your local machine.  Before you begin, please read the Queen's policy on [Acceptable Use of Information Technology Resources](https://www.queensu.ca/secretariat/policies/senate/electronic-information-security-policy-framework/acceptable-use-information).
+This is a tutorial for using the Queen's School of Computing  GPU computing cluster (known as Lobot).  It currently contains 13 hosts(nodes) of varing performance, hosting 118TB of storage, 2.4TB of memory, 1900 cpu cores and 65 NVIDIA GPUs. GPUs being hosted range from A16s, RTX5000, RTX6000, RTX6000-ada, A40s, and A100s.  Lobot is ideal for performing GPU-intensive computing tasks that wouldn't be possible on your local machine.  Before you begin, please read the Queen's policy on [Acceptable Use of Information Technology Resources](https://www.queensu.ca/secretariat/policies/senate/electronic-information-security-policy-framework/acceptable-use-information).
 # Important Links and Resources
 
-- [Server Access](https://p.l1nna.com/)
+- [Server Access](https://lobot.caslab.queensu.ca/)
 - [Jupyter Lab Docs](https://jupyterlab.readthedocs.io/en/latest/)
 - [Jupyter Notebook Docs](https://jupyter-notebook.readthedocs.io/en/stable/)
 - [Bash Introduction](https://programminghistorian.org/en/lessons/intro-to-bash)
@@ -46,7 +46,7 @@ Before you can begin using your the server you must first specify the resources 
 
 ![image](https://user-images.githubusercontent.com/25777239/92413172-dbf70a00-f11c-11ea-8fc7-2b22fd881824.png)
 
-On your first startup of the server you will be allocated 200GB of storage. These 200GB will always be yours, so there is no need to worry about your work not being saved when you terminate your session.  If you ever require more storage contact the server host.
+On your first startup of the server you will be allocated 10G of storage. These 10G will always be yours, so there is no need to worry about your work not being saved when you terminate your session.  If you ever require more storage contact the server host.
 # Termination
 
 ![image](https://user-images.githubusercontent.com/25777239/92413201-fdf08c80-f11c-11ea-9f9c-702bfbdf4902.png)
