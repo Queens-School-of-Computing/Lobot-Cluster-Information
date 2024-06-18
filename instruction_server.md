@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://media.giphy.com/media/U7nYAGksLRanU3i4vp/giphy-downsized-large.gif" alt="" />
 </p>
-<h1 align="center">:fire:GPU Cluster Instruction:fire:</h1>
+<h1 align="center">:fire:LOBOT Cluster Instruction:fire:</h1>
 <p align="center">
   <a href="#"><img src="http://hits.dwyl.io/L1NNA/Information.svg" alt="" /></a>
   <a href="#"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="" /></a>
