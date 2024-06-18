@@ -1,10 +1,4 @@
 # Information
-General directory of L1NNA lab
+General instructions and information for the Queen's School of Computing Lobot Cluster 
 
-
-# Supports:
-
-- Lab Infrastructures: Chris, Leo, Michael
-- Lab Procurement: Litao
-- Lab Scheduling and Documentations: Weihan
 
