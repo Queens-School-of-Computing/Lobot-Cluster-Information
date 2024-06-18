@@ -34,6 +34,7 @@ This is a tutorial for using the Queen's School of Computing  GPU computing clus
 - [Initialization](#initialization)
 - [Termination](#termination)
 - [JupyterLab](#jupyterlab)
+- [Co-Pilot](#co-pilot)
 - [VS Code](#vs-code)
 - [VS Code Remote Tunnel](#vs-code-remote-tunnel)
 - [GPU & Python Packages](#gpu-and-python-packages)
@@ -65,6 +66,14 @@ Once you have completed server initialization you will be connected to JupyterLa
 
 From the JupyterLab launcher you can easily create a Jupyter Notebook, console, terminal window, or VS Code instance.  To re-open the launcher go to File -> New Launcher or type (⌘ / Ctrl) + Shift + L.
 
+## Co Pilot
+I've received two recurring requests recently, one is for Github Copilot and the other is Remote VSCode. 
+
+Regarding Copilot, this is available to every verified educational user, just visit 
+[Source](https://education.github.com/discount_requests/application) 
+and fill out an application. 
+Please note, it may take several days for the verification to take place.
+
 ## VS Code
 
 ![image](https://user-images.githubusercontent.com/25777239/92413231-1d87b500-f11d-11ea-8d07-889b2b0532c8.png)
@@ -72,6 +81,32 @@ From the JupyterLab launcher you can easily create a Jupyter Notebook, console, 
 VS Code on the server works exactly like a local version, this includes the ability to add extensions.  Your extensions and settings will be automatically saved in your server storage when your connection is terminated.
 
 ## VS Code Remote Tunnel
+Setting up VSCode remote tunnel to access your cluster resources
+*DRAFT*
+Some background documentation:
+[Source](https://code.visualstudio.com/docs/remote/tunnels)
+[Source](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remoteserver)
+
+Spawn a workload with the most recent image.
+Note: Older images may not have the components necessary to authenticate with GitHub)
+Launch remote desktop. If you select VS Code from the jupyter desktop it will not support a tunnel.
+In remote desktop, launch the browser (chrome) and navigate to
+[Source](https://code.visualstudio.com/docs/?dv=linux64_deb) (you can just search for vscode download and select the .deb version)
+Once it’s downloaded, open a terminal and type
+```
+sudo dpkg –i ~/Downloads/code_1_88.0***.deb
+```
+(whatever the file version is) And now you can launch vs code.
+VSCode will remember its settings, and although you will have to reinstall it if you power off or reboot your workload, at least the settings and tunnel connection is already done for you.
+
+Sign into GitHub and then turn on remote tunnel access.
+
+Now you can open your VS Code on your local machine, sign into GitHub and click the bottom left hand icon to bring up the menu to connect to tunnel.
+Select GitHub as the account used. And then pick the gpu cluster workload
+
+You are now connected to the remote workload. Files are saved on your  cluster instance. You can drag and drop files to the directory and do all the normal things.
+
+Remember that you have to have vscode open in the remote desktop session for the tunnel to be active.
 
 ### Extensions & Themes
 Here are some helpful extensions and themes that will make your time with VS Code more enjoyable. Go to the extensions tab on the leftmost column of VS Code to input these extensions for download.
