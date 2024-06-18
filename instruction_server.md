@@ -47,6 +47,7 @@ Once you have connected your GitHub to the server you will now see the Hub Contr
 
 ### Allocating Server Resources
 Before you can begin using your the server you must first specify the resources you need.
+This is a shared resource, so only take what you think you’ll need. If the resources aren’t available, you won’t be able to start your server until they get freed up again. Start with the minimum resources and see how performance is, if you feel you need more. Stop your workload and start it again with more cores/memory/gpu.
 
 ![image](https://user-images.githubusercontent.com/25777239/92413172-dbf70a00-f11c-11ea-8fc7-2b22fd881824.png)
 
