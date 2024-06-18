@@ -35,6 +35,7 @@ This is a tutorial for using the Queen's School of Computing  GPU computing clus
 - [Termination](#termination)
 - [JupyterLab](#jupyterlab)
 - [VS Code](#vs-code)
+- [VS Code Remote Tunnel](#vs-code-remote-tunnel)
 - [GPU & Python Packages](#gpu-and-python-packages)
 - [Conda Environments](#conda-environments)
 
@@ -69,6 +70,8 @@ From the JupyterLab launcher you can easily create a Jupyter Notebook, console, 
 ![image](https://user-images.githubusercontent.com/25777239/92413231-1d87b500-f11d-11ea-8d07-889b2b0532c8.png)
 
 VS Code on the server works exactly like a local version, this includes the ability to add extensions.  Your extensions and settings will be automatically saved in your server storage when your connection is terminated.
+
+## VS Code Remote Tunnel
 
 ### Extensions & Themes
 Here are some helpful extensions and themes that will make your time with VS Code more enjoyable. Go to the extensions tab on the leftmost column of VS Code to input these extensions for download.
@@ -131,10 +134,20 @@ magic.py  __pycache__  pytest  _pytest  pytest-6.0.1.dist-info  python_magic-0.4
 ```
 
 # Conda Environments
-By default, all your new conda environments will be saved into your home folder. So that will be persisted even if you stop/restart your server. To activate an environment in JupyterLab terminal, you can:
-
+By default, all your new conda environments will be saved into your home folder. So that will be persisted even if you stop/restart your server. Before you activate an environment, you need to create it.
+[Source](https://saturncloud.io/blog/how-to-use-conda-environment-in-a-jupyter-notebook/)
 ```
-source activate your_environment
+# to view existing envs
+$ conda info --envs
+
+# to create a new environment
+$ conda create -n yourenvname python=3.9
+```
+
+To activate an environment in JupyterLab terminal, you can:
+```
+# conda activate doesn't work in jupyter notebooks
+$ source activate yourenvname 
 ```
 This is the **ONLY** way it will work with the JupyterLab web terminal. 
 
@@ -142,16 +155,19 @@ This is the **ONLY** way it will work with the JupyterLab web terminal.
 After creating a new Conda environment, you can create a quick-link on the JupyterLab launcher to create a Python terminal with the new Conda environment.  First, activate your new Conda environment.  Then install `ipykernel` into that new environment.  Finally create a new kernel :
 
 ```
-$ conda activate test
-(test)$ conda install ipykernel
-(test)$ ipython kernel install --user --name=<any_name_for_kernel>
-(test)$ conda deactivate
+$ source activate yourenvname
+# now you can create links in the jupyter launcher
+(yourenvname)$ conda install ipykernel
+(yourenvname)$ ipython kernel install --user --name=mykernelnamehere
+(yourenvname)$ conda deactivate
 ```
 Now, the a notebook for the new kernel should appear in your JupyterLab launcher after restarting JupyterLab.
 
 ![EnvironmentTutorial](https://user-images.githubusercontent.com/25777239/92413251-385a2980-f11d-11ea-95dc-bf666647be53.jpg)
 
 [Source](https://stackoverflow.com/questions/53004311/how-to-add-conda-environment-to-jupyter-lab)
+
+
 
 ### Removing an added Environment
 If you decide you no longer want a Conda environment simply deleting it should remove the linked Jupyter notebook launcher.  It it persists, however, you can type 
