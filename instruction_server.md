@@ -41,8 +41,7 @@ This is a tutorial for using the Queen's School of Computing  GPU computing clus
 - [Conda Environments](#conda-environments)
 
 # Initialization
-Access to Lobot is gained through github credentials and being a member of the Queen's School of Computing Github Organization. After you accept the organization invite, you can access the cluster by logging in at
-[Source](https://lobot.caslab.queensu.ca/)
+Access to Lobot is gained through github credentials and being a member of the Queen's School of Computing Github Organization. After you accept the organization invite, you can access the cluster by logging in at https://lobot.caslab.queensu.ca/
 
 Once you have connected your GitHub to the server you will now see the Hub Control Panel. The Hub Control Panel is where you can initialize or terminate your session. 
 
@@ -72,10 +71,7 @@ From the JupyterLab launcher you can easily create a Jupyter Notebook, console, 
 ## Co Pilot
 I've received two recurring requests recently, one is for Github Copilot and the other is Remote VSCode. 
 
-Regarding Copilot, this is available to every verified educational user, just visit 
-[Source](https://education.github.com/discount_requests/application) 
-and fill out an application. 
-Please note, it may take several days for the verification to take place.
+Regarding Copilot, this is available to every verified educational user, just visit https://education.github.com/discount_requests/application and fill out an application. Please note, it may take several days for the verification to take place.
 
 ## VS Code
 
@@ -87,14 +83,15 @@ VS Code on the server works exactly like a local version, this includes the abil
 Setting up VSCode remote tunnel to access your cluster resources
 *DRAFT*
 Some background documentation:
-[Source](https://code.visualstudio.com/docs/remote/tunnels)
-[Source](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remoteserver)
+https://code.visualstudio.com/docs/remote/tunnels
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.remoteserver
 
 Spawn a workload with the most recent image.
 Note: Older images may not have the components necessary to authenticate with GitHub)
 Launch remote desktop. If you select VS Code from the jupyter desktop it will not support a tunnel.
 In remote desktop, launch the browser (chrome) and navigate to
-[Source](https://code.visualstudio.com/docs/?dv=linux64_deb) (you can just search for vscode download and select the .deb version)
+https://code.visualstudio.com/docs/?dv=linux64_deb
+(you can just search for vscode download and select the .deb version)
 Once it’s downloaded, open a terminal and type
 ```
 sudo dpkg –i ~/Downloads/code_1_88.0***.deb
