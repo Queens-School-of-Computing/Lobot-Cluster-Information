@@ -1,5 +1,5 @@
 # Introduction
-Hello! Thank you for being one of the first users of the new matlab implementation in the Lobot cluster. This is our first time setting up matlab capabilities in the cluster, so there are bound to be some teething issues. Please send an email to <a mailto:"help@cs.queensu.ca">help@cs.queensu.ca<a>
+Hello! Thank you for being one of the first users of the new matlab implementation in the Lobot cluster. This is our first time setting up matlab capabilities in the cluster, so there are bound to be some teething issues. Please send an email to <a href="help@cs.queensu.ca">help@cs.queensu.ca<a>
 
 NOTE: We have not installed any additional toolsets, which I'm sure you will need. 
 
