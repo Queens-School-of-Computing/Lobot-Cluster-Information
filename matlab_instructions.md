@@ -17,4 +17,7 @@ The first time you ever run matlab, the license screen will come up. Choose exis
 The first time you start matlab, it will take a bit to load behind the scenes, but then it should be good to go. Here's running a command in a jupyter notebook.
 ![image](https://github.com/user-attachments/assets/045adb70-1339-40e9-8be4-176490298a19)
 
+If you would like the full matlab ui, open a remote desktop session from the launcher and type matlab in the terminal.
+![image](https://github.com/user-attachments/assets/38947254-210a-4451-8fd4-c89ca9e9398a)
+
 
