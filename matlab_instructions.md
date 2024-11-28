@@ -18,6 +18,7 @@ The first time you start matlab, it will take a bit to load behind the scenes, b
 ![image](https://github.com/user-attachments/assets/045adb70-1339-40e9-8be4-176490298a19)
 
 If you would like the full matlab ui, open a remote desktop session from the launcher and type matlab in the terminal.
+![image](https://github.com/user-attachments/assets/c8d9c462-da22-4211-9eed-f1f08becab0d)
 ![image](https://github.com/user-attachments/assets/38947254-210a-4451-8fd4-c89ca9e9398a)
 
 
