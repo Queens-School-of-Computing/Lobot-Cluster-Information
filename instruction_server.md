@@ -55,7 +55,8 @@ If your server is running during the night, it will be backed up. Only a single 
 # Termination
 ![image](https://user-images.githubusercontent.com/25777239/92413201-fdf08c80-f11c-11ea-9f9c-702bfbdf4902.png)
 
-**\*IMPORTANT!\*** Closing your JupyterLab tab will not  end your session and free up resources.  You must go to File -> Hub Control Panel, then in the new tab click the "Stop My Server" button.  All your files on the server will be automatically saved upon ending a session.
+**\*IMPORTANT!\*** Closing your JupyterLab tab will not  end your session and free up resources.  You must go to File -> Hub Control Panel, then in the new tab click the "Stop My Server" button.  All your files on the server will be automatically saved upon ending a session. ALSO, when using the remote desktop, DO NOT log-out of it. Just close the tab if you don't want to use it or want to "logout". If you logout, it will kill the remote desktop and you will have to stop and restart your server.
+
 ### Server Life cycle
 After 72 hours of inactivity your session will be terminated.  All your files will be automatically saved to your allocated storage.
 
@@ -82,7 +83,7 @@ VS Code on the server works exactly like a local version, this includes the abil
 
 ## VS Code Remote Tunnel
 Setting up VSCode remote tunnel to access your cluster resources
-*DRAFT*
+
 Some background documentation:
 https://code.visualstudio.com/docs/remote/tunnels
 https://marketplace.visualstudio.com/items?itemName=ms-vscode.remoteserver
