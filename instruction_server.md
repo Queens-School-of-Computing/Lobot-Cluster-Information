@@ -27,6 +27,7 @@ This is a tutorial for using the Queen's School of Computing Computing cluster (
 - [Initialization](#initialization)
 - [Termination](#termination)
 - [JupyterLab](#jupyterlab)
+- [MatLab](#matlab)
 - [Co-Pilot](#co-pilot)
 - [VS Code](#vs-code)
 - [VS Code Remote Tunnel](#vs-code-remote-tunnel)
@@ -42,7 +43,7 @@ Once you have connected your GitHub to the server you will now see the Hub Contr
 Before you can begin using your the server you must first specify the resources you need.
 This is a shared resource, so only take what you think you’ll need. If the resources aren’t available, you won’t be able to start your server until they get freed up again. Start with the minimum resources and see how performance is, if you feel you need more. Stop your workload and start it again with more cores/memory/gpu.
 
-![image](https://user-images.githubusercontent.com/25777239/92413172-dbf70a00-f11c-11ea-8fc7-2b22fd881824.png)
+![image](https://github.com/user-attachments/assets/854a176b-c6db-4a18-9ddd-3e2f37c769e7)
 
 On your first startup of the server you will be allocated 50G of storage. These 50G will always be yours, so there is no need to worry about your work not being saved when you terminate your session.  If you ever require more storage contact the School of Computing Tech Team at help@cs.queensu.ca
 
@@ -57,12 +58,14 @@ After 72 hours of inactivity your session will be terminated.  All your files wi
 
 
 # JupyterLab
-
 Once you have completed server initialization you will be connected to JupyterLab through the server.
 
-![image](https://user-images.githubusercontent.com/25777239/92413219-152f7a00-f11d-11ea-8be6-8688cac65986.png)
+![image](https://github.com/user-attachments/assets/61a83810-f3a9-497f-81af-92c078fee9fb)
 
-From the JupyterLab launcher you can easily create a Jupyter Notebook, console, terminal window, or VS Code instance.  To re-open the launcher go to File -> New Launcher or type (⌘ / Ctrl) + Shift + L.
+From the JupyterLab launcher you can easily create a Jupyter Notebook, console, terminal window,  or VS Code instance.  To re-open the launcher go to File -> New Launcher or type (⌘ / Ctrl) + Shift + L.
+
+## MatLab
+*New* Matlab is now installed in the image, see https://github.com/Queens-School-of-Computing/Lobot-Cluster-Information/blob/master/matlab_instructions.md for more details.
 
 ## Co Pilot
 I've received two recurring requests recently, one is for Github Copilot and the other is Remote VSCode. 
@@ -70,7 +73,6 @@ I've received two recurring requests recently, one is for Github Copilot and the
 Regarding Copilot, this is available to every verified educational user, just visit https://education.github.com/discount_requests/application and fill out an application. Please note, it may take several days for the verification to take place.
 
 ## VS Code
-
 ![image](https://user-images.githubusercontent.com/25777239/92413231-1d87b500-f11d-11ea-8d07-889b2b0532c8.png)
 
 VS Code on the server works exactly like a local version, this includes the ability to add extensions.  Your extensions and settings will be automatically saved in your server storage when your connection is terminated.
@@ -82,18 +84,10 @@ Some background documentation:
 https://code.visualstudio.com/docs/remote/tunnels
 https://marketplace.visualstudio.com/items?itemName=ms-vscode.remoteserver
 
-Spawn a workload with the most recent image.
-Note: Older images may not have the components necessary to authenticate with GitHub)
-Launch remote desktop. If you select VS Code from the jupyter desktop it will not support a tunnel.
-In remote desktop, launch the browser (chrome) and navigate to
-https://code.visualstudio.com/docs/?dv=linux64_deb
-(you can just search for vscode download and select the .deb version)
-Once it’s downloaded, open a terminal and type
-```
-sudo dpkg –i ~/Downloads/code_1_88.0***.deb
-```
-(whatever the file version is) And now you can launch vs code.
-VSCode will remember its settings, and although you will have to reinstall it if you power off or reboot your workload, at least the settings and tunnel connection is already done for you.
+Launch remote desktop. If you select VS Code from the jupyter desktop it might not support a tunnel.
+
+Open up VSCode which is already installed.
+![image](https://github.com/user-attachments/assets/5db10383-6756-4232-bd32-efee06621c51)
 
 Sign into GitHub and then turn on remote tunnel access.
 
@@ -103,26 +97,6 @@ Select GitHub as the account used. And then pick the gpu cluster workload
 You are now connected to the remote workload. Files are saved on your  cluster instance. You can drag and drop files to the directory and do all the normal things.
 
 Remember that you have to have vscode open in the remote desktop session for the tunnel to be active.
-
-### Extensions & Themes
-Here are some helpful extensions and themes that will make your time with VS Code more enjoyable. Go to the extensions tab on the leftmost column of VS Code to input these extensions for download.
-
-+ ```ms-python.python``` - Python package (Highly recommended)
-+ ```eamodio.gitlens``` - GitHub extension (Highly recommended)
-+ ```streetsidesoftware.code-spell-checker``` - Code spell checker
-+  ```christian-kohler.path-intellisense``` - Path autocomplete
-+ ```esbenp.prettier-vscode``` - Code formatter 
-+ ```vscodevim.vim``` - Vim extension 
-
-
-These are some themes that you can install to personalize your VS Code:
-
-+ ```onecrayon.theme-quietlight-vsc``` - light theme with a bit more color than VS Code default light theme
-+ ```eliverlara.andromeda ``` - Dark theme
-+  ```robbowen.synthwave-vscode``` - Matches Cyberdeck aesthetic 
-
-Shortcut for changing your current theme:  ```CTRL+K CTRL+T```
-
 
 # GPU and Python Packages
 
