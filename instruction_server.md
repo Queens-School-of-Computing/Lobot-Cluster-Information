@@ -1,22 +1,15 @@
 <p align="center">
-  <img src="https://media.giphy.com/media/U7nYAGksLRanU3i4vp/giphy-downsized-large.gif" alt="" />
+  <img src="https://media1.tenor.com/m/e0PUiA9HF7gAAAAd/star-wars.gif" alt="" />
 </p>
-<h1 align="center">:fire:LOBOT Cluster Instruction:fire:</h1>
+<h1 align="center">:fire:QSC LOBOT Cluster Instructions:fire:</h1>
 <p align="center">
-  <a href="#"><img src="http://hits.dwyl.io/L1NNA/Information.svg" alt="" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="" /></a>
-  <a href="#"><img src="https://img.shields.io/github/issues/L1NNA/Information.svg?style=flat-square" alt="" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/badges-awesome-green.svg?style=flat-square&color=brightgreen" alt="" /></a>
-  <a href="#"><img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg?style=flat-square&color=brightgreen" alt="" /></a>
-</p>
-<p align="center">
-  <span>Contributors: Aaron Visser</span>
+  <span>Contributors: Aaron Visser (https://github.com/wiegerthefarmer)</span>
 </p>
 
 
 
 # Introduction
-This is a tutorial for using the Queen's School of Computing  GPU computing cluster (known as Lobot).  It currently contains 17 hosts(nodes) of varing performance, hosting 121TB of storage, 10.5TB of memory, 2000 cpu cores and 75 NVIDIA GPUs. GPUs being hosted range from A16s, RTX5000, RTX6000, RTX6000-ada, A40s, A100s, and H100 NVLs.  Lobot is ideal for performing GPU-intensive computing tasks that wouldn't be possible on your local machine.  Before you begin, please read the Queen's policy on [Acceptable Use of Information Technology Resources](https://www.queensu.ca/secretariat/policies/senate/electronic-information-security-policy-framework/acceptable-use-information).
+This is a tutorial for using the Queen's School of Computing Computing cluster (known as Lobot).  It currently contains 17 hosts(nodes) of varing performance, hosting 121TB of storage, 10.5TB of memory, 2000 cpu cores and 75 NVIDIA GPUs. GPUs being hosted range from A16s, RTX5000, RTX6000, RTX6000-ada, A40s, A100s, and H100 NVLs.  Lobot is ideal for performing computing tasks that wouldn't be possible on your local machine.  Before you begin, please read the Queen's policy on [Acceptable Use of Information Technology Resources](https://www.queensu.ca/secretariat/policies/senate/electronic-information-security-policy-framework/acceptable-use-information).
 # Important Links and Resources
 
 - [Server Access](https://lobot.cs.queensu.ca/)
@@ -41,7 +34,7 @@ This is a tutorial for using the Queen's School of Computing  GPU computing clus
 - [Conda Environments](#conda-environments)
 
 # Initialization
-Access to Lobot is gained through github credentials and being a member of the Queen's School of Computing Github Organization. After you accept the organization invite, you can access the cluster by logging in at https://lobot.caslab.queensu.ca/
+Access to Lobot is gained through github credentials and being a member of the Queen's School of Computing Github Organization. After you accept the organization invite, you can access the cluster by logging in at https://lobot.cs.queensu.ca/
 
 Once you have connected your GitHub to the server you will now see the Hub Control Panel. The Hub Control Panel is where you can initialize or terminate your session. 
 
@@ -51,14 +44,16 @@ This is a shared resource, so only take what you think you’ll need. If the res
 
 ![image](https://user-images.githubusercontent.com/25777239/92413172-dbf70a00-f11c-11ea-8fc7-2b22fd881824.png)
 
-On your first startup of the server you will be allocated 10G of storage. These 10G will always be yours, so there is no need to worry about your work not being saved when you terminate your session.  If you ever require more storage contact the server host.
+On your first startup of the server you will be allocated 50G of storage. These 50G will always be yours, so there is no need to worry about your work not being saved when you terminate your session.  If you ever require more storage contact the School of Computing Tech Team at help@cs.queensu.ca
+
+If your server is running during the night, it will be backed up. Only a single snapshot is maintained and is overwritten each night. 
 # Termination
 
 ![image](https://user-images.githubusercontent.com/25777239/92413201-fdf08c80-f11c-11ea-9f9c-702bfbdf4902.png)
 
 **\*IMPORTANT!\*** Closing your JupyterLab tab will not  end your session and free up resources.  You must go to File -> Hub Control Panel, then in the new tab click the "Stop My Server" button.  All your files on the server will be automatically saved upon ending a session.
 ### Server Life cycle
-After 24 hours of inactivity your session will be terminated.  All your files will be automatically saved to your allocated storage.
+After 72 hours of inactivity your session will be terminated.  All your files will be automatically saved to your allocated storage.
 
 
 # JupyterLab
