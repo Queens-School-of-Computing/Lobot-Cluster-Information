@@ -16,10 +16,10 @@
 
 
 # Introduction
-This is a tutorial for using the Queen's School of Computing  GPU computing cluster (known as Lobot).  It currently contains 13 hosts(nodes) of varing performance, hosting 118TB of storage, 2.4TB of memory, 1900 cpu cores and 65 NVIDIA GPUs. GPUs being hosted range from A16s, RTX5000, RTX6000, RTX6000-ada, A40s, and A100s.  Lobot is ideal for performing GPU-intensive computing tasks that wouldn't be possible on your local machine.  Before you begin, please read the Queen's policy on [Acceptable Use of Information Technology Resources](https://www.queensu.ca/secretariat/policies/senate/electronic-information-security-policy-framework/acceptable-use-information).
+This is a tutorial for using the Queen's School of Computing  GPU computing cluster (known as Lobot).  It currently contains 17 hosts(nodes) of varing performance, hosting 121TB of storage, 10.5TB of memory, 2000 cpu cores and 75 NVIDIA GPUs. GPUs being hosted range from A16s, RTX5000, RTX6000, RTX6000-ada, A40s, A100s, and H100 NVLs.  Lobot is ideal for performing GPU-intensive computing tasks that wouldn't be possible on your local machine.  Before you begin, please read the Queen's policy on [Acceptable Use of Information Technology Resources](https://www.queensu.ca/secretariat/policies/senate/electronic-information-security-policy-framework/acceptable-use-information).
 # Important Links and Resources
 
-- [Server Access](https://lobot.caslab.queensu.ca/)
+- [Server Access](https://lobot.cs.queensu.ca/)
 - [Jupyter Lab Docs](https://jupyterlab.readthedocs.io/en/latest/)
 - [Jupyter Notebook Docs](https://jupyter-notebook.readthedocs.io/en/stable/)
 - [Bash Introduction](https://programminghistorian.org/en/lessons/intro-to-bash)
