@@ -10,6 +10,7 @@
 
 # Introduction
 This is a tutorial for using the Queen's School of Computing Computing cluster (known as Lobot).  It currently contains 17 hosts(nodes) of varing performance, hosting 121TB of storage, 10.5TB of memory, 2000 cpu cores and 75 NVIDIA GPUs. GPUs being hosted range from A16s, RTX5000, RTX6000, RTX6000-ada, A40s, A100s, and H100 NVLs.  Lobot is ideal for performing computing tasks that wouldn't be possible on your local machine.  Before you begin, please read the Queen's policy on [Acceptable Use of Information Technology Resources](https://www.queensu.ca/secretariat/policies/senate/electronic-information-security-policy-framework/acceptable-use-information).
+
 # Important Links and Resources
 
 - [Server Access](https://lobot.cs.queensu.ca/)
@@ -41,15 +42,17 @@ Once you have connected your GitHub to the server you will now see the Hub Contr
 
 ### Allocating Server Resources
 Before you can begin using your the server you must first specify the resources you need.
+![image](https://github.com/user-attachments/assets/854a176b-c6db-4a18-9ddd-3e2f37c769e7)
+
 This is a shared resource, so only take what you think you’ll need. If the resources aren’t available, you won’t be able to start your server until they get freed up again. Start with the minimum resources and see how performance is, if you feel you need more. Stop your workload and start it again with more cores/memory/gpu.
 
-![image](https://github.com/user-attachments/assets/854a176b-c6db-4a18-9ddd-3e2f37c769e7)
+**NOTE** Above the resource selection is the current available resources with the active users. If you require immediate resources, please contact the user directly so that they can finish work and stop their server. In case of emergency, please email help@cs.queensu.ca
 
 On your first startup of the server you will be allocated 50G of storage. These 50G will always be yours, so there is no need to worry about your work not being saved when you terminate your session.  If you ever require more storage contact the School of Computing Tech Team at help@cs.queensu.ca
 
 If your server is running during the night, it will be backed up. Only a single snapshot is maintained and is overwritten each night. 
-# Termination
 
+# Termination
 ![image](https://user-images.githubusercontent.com/25777239/92413201-fdf08c80-f11c-11ea-9f9c-702bfbdf4902.png)
 
 **\*IMPORTANT!\*** Closing your JupyterLab tab will not  end your session and free up resources.  You must go to File -> Hub Control Panel, then in the new tab click the "Stop My Server" button.  All your files on the server will be automatically saved upon ending a session.
