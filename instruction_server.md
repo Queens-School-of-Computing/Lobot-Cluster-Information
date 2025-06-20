@@ -76,6 +76,14 @@ I've received two recurring requests recently, one is for Github Copilot and the
 
 Regarding Copilot, this is available to every verified educational user, just visit https://education.github.com/discount_requests/application and fill out an application. Please note, it may take several days for the verification to take place.
 
+Copilot chat may not work in the notebook version of VSCode. Use the fully fledged remote desktop version.
+Launch remote desktop. If you select VS Code from the jupyter desktop it might not support a tunnel.
+
+Open up VSCode which is already installed.
+![image](https://github.com/user-attachments/assets/5db10383-6756-4232-bd32-efee06621c51)
+
+Sign into GitHub and then copilot should activate if you have it enabled for your account.
+
 ## VS Code
 ![image](https://user-images.githubusercontent.com/25777239/92413231-1d87b500-f11d-11ea-8d07-889b2b0532c8.png)
 
